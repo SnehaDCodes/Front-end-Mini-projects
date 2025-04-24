@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="elements-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔬 Interactive Periodic Table</h1>
+        <input type="text" id="searchBox" placeholder="Search an element..." onkeyup="searchElement()">
+        <div class="table">
+            <!-- Elements will be inserted dynamically -->
+        </div>
+    </div>
+
+    <div id="elementDetails" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="elementName"></h2>
+            <p><strong>Symbol:</strong> <span id="elementSymbol"></span></p>
+            <p><strong>Atomic Number:</strong> <span id="atomicNumber"></span></p>
+            <p><strong>Atomic Weight:</strong> <span id="atomicWeight"></span></p>
+            <p><strong>Uses:</strong> <span id="elementUses"></span></p>
+        </div>
+    </div>
+
+    <script src="elements-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1a1a2e;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+/* Heading */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Search Box */
+#searchBox {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #00a8cc;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+#searchBox:focus {
+    border-color: #00f5d4;
+    box-shadow: 0 0 10px #00f5d4;
+}
+
+/* Periodic Table Grid */
+.table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Element Box */
+.element {
+    padding: 15px;
+    background: #16213e;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00f5d4;
+    box-shadow: 0 4px 10px rgba(0, 245, 212, 0.4);
+}
+
+.element:hover {
+    background: #00a8cc;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 168, 204, 0.6);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    z-index: 1000;
+}
+
+.modal-content {
+    color: white;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .table {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .modal {
+        width: 80%;
+    }
+}
